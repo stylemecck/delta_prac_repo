@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Space Quiz</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Space Quiz</h1>
+    <div id="register" style="display: block;">
+      <h2>Register</h2>
+      <form id="registrationForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <button type="submit">Register</button>
+      </form>
+      <p>Already registered? <a href="#" id="loginLink">Log in</a></p>
+    </div>
+    <div id="login" style="display: none;">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <label for="loginUsername">Username:</label>
+        <input type="text" id="loginUsername" required>
+        <label for="loginPassword">Password:</label>
+        <input type="password" id="loginPassword" required>
+        <button type="submit">Log in</button>
+      </form>
+      <p>Not registered yet? <a href="#" id="registerLink">Register</a></p>
+    </div>
+    <div id="quiz" style="display: none;">
+      <div id="question-container">
+        <h2 id="question"></h2>
+        <div id="options-container">
+          <!-- Options -->
+        </div>
+      </div>
+    </div>
+    <button id="submit" style="display: none;">Submit</button>
+  </div>
+
+  <script src="./js/applogin.js"></script>
+</body>
+</html>
